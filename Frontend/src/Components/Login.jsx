@@ -18,12 +18,12 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const { email, password } = formData;
 
     try {
       // Send login request to the backend
-      await axios.post("http://localhost:5000/api/login", {
+      await axios.post("http://localhost:5000/api/auth/login", {
         email,
         password,
       });
