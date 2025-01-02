@@ -37,7 +37,10 @@ const Registration = () => {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", userData);
+      await axios.post(
+        "https://auth-j3zh.onrender.com/api/auth/register",
+        userData
+      );
       alert("Registration successful!");
       navigate("/login"); // Redirect to login page on success
     } catch (error) {

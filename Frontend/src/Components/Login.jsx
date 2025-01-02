@@ -23,7 +23,7 @@ const Login = () => {
 
     try {
       // Send login request to the backend
-      await axios.post("http://localhost:5000/api/auth/login", {
+      await axios.post("https://auth-j3zh.onrender.com/api/auth/login", {
         email,
         password,
       });
